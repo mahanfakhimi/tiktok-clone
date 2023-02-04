@@ -1,15 +1,11 @@
-import Video from "./components/Video";
+import VideoCard from "./components/post/VideoCard";
 
 const Home = () => {
   return (
     <div className="flex-1 pt-4">
-      <Video />
-      <Video />
-      <Video />
-      <Video />
-      <Video />
-      <Video />
-      <Video />
+      <VideoCard />
+      {/* <VideoCard /> */}
+      {/* <VideoCard /> */}
     </div>
   );
 };
