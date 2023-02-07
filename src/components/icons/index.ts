@@ -6,3 +6,6 @@ export { default as TiktokIcon } from "./TiktokIcon";
 export { default as CommentIcon } from "./CommentIcon";
 export { default as LikeIcon } from "./LikeIcon";
 export { default as ShareIcon } from "./ShareIcon";
+export { default as DotsVerticalIcon } from "./DotsVerticalIcon";
+export { default as DarkIcon } from "./DarkIcon";
+export { default as KeyboardIcon } from "./KeyboardIcon";

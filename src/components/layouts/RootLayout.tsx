@@ -2,15 +2,15 @@ import { FC, ReactNode } from "react";
 import Header from "../Header";
 import Sidebar from "../Sidebar";
 
-interface RootLayoutProps {
+type RootLayoutProps = {
   children: ReactNode;
-}
+};
 
 const RootLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
     <div>
       <Header />
-      <div className="flex gap-x-4 max-w-5xl mx-auto pr-4">
+      <div className="flex gap-x-4 max-w-6xl mx-auto pr-4 mt-16 mb-4">
         <Sidebar />
         {children}
       </div>

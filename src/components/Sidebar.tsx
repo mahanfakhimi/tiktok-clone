@@ -2,17 +2,17 @@ import { HomeIcon, PersonIcon, LiveIcon } from "./icons";
 
 const Sidebar = () => {
   return (
-    <aside className="max-w-xs h-screen border-r pt-4 px-4 sticky">
-      <div>
-        <div className="flex items-center gap-x-2 font-semibold mb-4 cursor-pointer">
+    <aside className="max-w-xs h-screen border-r pt-4 px-4 bg-white">
+      <div className="[&>div]:cursor-pointer [&>div]:mb-4 [&>div]:gap-x-2 [&>div]:flex [&>div]:items-center font-semibold">
+        <div>
           <HomeIcon />
           <span className="hidden md:block">For You</span>
         </div>
-        <div className="flex items-center gap-x-2 font-semibold mb-4 cursor-pointer">
+        <div>
           <PersonIcon />
           <span className="hidden md:block">Following</span>
         </div>
-        <div className="flex items-center gap-x-2 font-semibold mb-4 cursor-pointer">
+        <div>
           <LiveIcon />
           <span className="hidden md:block">Live</span>
         </div>
@@ -20,7 +20,7 @@ const Sidebar = () => {
 
       <div className="border-t border-b py-4 mb-4 hidden md:block">
         <p className="leading-6 mb-4 text-sm text-gray-500">Log in to follow creators, like videos, and view comments</p>
-        <button className="text-[#fe2c55] font-semibold hover:bg-[#fff1f4] active:bg-[#ffcad4] w-full border border-[#fe2c55] py-3 px-8 rounded-md">Log In</button>
+        <button className="text-[#fe2c55] font-semibold hover:bg-[#fff1f4] active:bg-[#ffcad4] w-full border border-[#fe2c55] py-3 px-8 rounded-md">Login</button>
       </div>
 
       <div>
