@@ -17,3 +17,5 @@ export { default as UserIcon } from "./UserIcon";
 export { default as TwitterIcon } from "./TwitterIcon";
 export { default as MessagesIcon } from "./MessagesIcon";
 export { default as InboxIcon } from "./InboxIcon";
+export { default as SettingIcon } from "./SettingIcon";
+export { default as LogoutIcon } from "./LogoutIcon";
