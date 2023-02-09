@@ -5,8 +5,8 @@ const LoginButton = () => {
   const [isOpenLoginModal, setIsOpenLoginModal] = useState(false);
 
   return (
-    <div>
-      <button onClick={() => setIsOpenLoginModal(true)} className="bg-primary-900 text-white border border-primary-900 rounded py-1.5 px-5 text-sm mr-3">
+    <div className="mr-4">
+      <button onClick={() => setIsOpenLoginModal(true)} className="bg-primary-900 text-white border border-primary-900 rounded py-1.5 px-5 text-sm">
         Login
       </button>
       <LoginModal isOpenModal={isOpenLoginModal} setIsOpenModal={setIsOpenLoginModal} />

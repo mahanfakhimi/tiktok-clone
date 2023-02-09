@@ -15,3 +15,5 @@ export { default as GoogleIcon } from "./GoogleIcon";
 export { default as InstagramIcon } from "./InstagramIcon";
 export { default as UserIcon } from "./UserIcon";
 export { default as TwitterIcon } from "./TwitterIcon";
+export { default as MessagesIcon } from "./MessagesIcon";
+export { default as InboxIcon } from "./InboxIcon";
