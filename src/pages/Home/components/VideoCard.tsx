@@ -4,12 +4,12 @@ import { LikeIcon, CommentIcon, ShareIcon } from "../../../components/icons";
 const VideoCard = () => {
   return (
     <div className="flex gap-x-4 [&:not(:last-child)]:border-b [&:not(:last-child)]:mb-7 [&:not(:last-child)]:pb-7">
-      <img className="w-14 h-14 object-cover rounded-full hidden md:block" src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/332aeff51916937d2b4ee3bec3e48981~c5_100x100.jpeg?x-expires=1675854000&x-signature=CmunNDt8JjaG78VJpKPcrS%2BUypk%3D" alt="" />
+      <img className="w-14 h-14 object-cover rounded-full hidden md:block" src="https://www.tubefilter.com/wp-content/uploads/2022/09/khaby-lame-acting.jpg" alt="" />
 
       <div>
         <div className="text-sm">
           <div className="flex items-center gap-x-4 mb-2 md:mb-0">
-            <img className="w-11 h-11 object-cover rounded-full md:hidden" src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/332aeff51916937d2b4ee3bec3e48981~c5_100x100.jpeg?x-expires=1675854000&x-signature=CmunNDt8JjaG78VJpKPcrS%2BUypk%3D" alt="" />
+            <img className="w-11 h-11 object-cover rounded-full md:hidden" src="https://www.tubefilter.com/wp-content/uploads/2022/09/khaby-lame-acting.jpg" alt="" />
             <div className="flex flex-col md:flex-row gap-x-2">
               <h3 className="font-semibold">noelgoescrazy</h3>
               <p className="text-gray-500">front_end developer</p>

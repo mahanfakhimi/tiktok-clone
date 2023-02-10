@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { UserContext } from "../../contexts/UserProvider";
 import { InboxIcon, MessagesIcon } from "../icons";
 import LoginButton from "./LoginButton";
 import MoreActions from "./MoreActions";
 import UploadButton from "./UploadButton";
+import { UserContext } from "../../contexts/UserProvider";
 
 const RenderOtherThings = () => {
   const user = useContext(UserContext);
