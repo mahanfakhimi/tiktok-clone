@@ -1,8 +1,8 @@
-import VideoCard from "./components/VideoCard";
+import VideoCard from "../components/VideoCard";
 
 const Home = () => {
   return (
-    <div className="flex-1 pt-4">
+    <div>
       <VideoCard />
       <VideoCard />
       <VideoCard />

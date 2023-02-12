@@ -1,5 +1,5 @@
 import { FC, useState } from "react";
-import LoginModal from "./Header/LoginModal";
+import LoginModal from "./LoginModal";
 import { HomeIcon, PersonIcon, LiveIcon } from "./icons";
 
 const NavItem = ({ Icon, label }: { Icon: FC; label: string }) => (

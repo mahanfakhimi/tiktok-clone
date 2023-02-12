@@ -1,9 +1,34 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { InboxIcon, MessagesIcon } from "../icons";
-import LoginButton from "./LoginButton";
-import MoreActions from "./MoreActions";
-import UploadButton from "./UploadButton";
+import OptionsMenu from "./OptionsMenu";
 import { UserContext } from "../../contexts/UserProvider";
+import LoginModal from "../LoginModal";
+
+const LoginButton = () => {
+  const [isOpenLoginModal, setIsOpenLoginModal] = useState(false);
+
+  return (
+    <div className="mr-4">
+      <button onClick={() => setIsOpenLoginModal(true)} className="bg-primary-900 text-white font-medium border border-primary-900 rounded py-1.5 px-5 text-sm">
+        Login
+      </button>
+      <LoginModal isOpenModal={isOpenLoginModal} setIsOpenModal={setIsOpenLoginModal} />
+    </div>
+  );
+};
+
+const UploadButton = () => {
+  const [isOpenLoginModal, setIsOpenLoginModal] = useState(false);
+
+  return (
+    <div className="mr-4">
+      <button onClick={() => setIsOpenLoginModal(true)} className="border border-gray-300 text-black font-medium rounded py-1.5 px-5 text-sm">
+        Upload
+      </button>
+      <LoginModal isOpenModal={isOpenLoginModal} setIsOpenModal={setIsOpenLoginModal} />
+    </div>
+  );
+};
 
 const RenderOtherThings = () => {
   const user = useContext(UserContext);
@@ -28,7 +53,7 @@ const HeaderActions = () => {
     <div className="flex items-center">
       <UploadButton />
       <RenderOtherThings />
-      <MoreActions />
+      <OptionsMenu />
     </div>
   );
 };

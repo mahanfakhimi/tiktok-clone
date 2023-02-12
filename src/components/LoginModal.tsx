@@ -1,5 +1,5 @@
-import withModal from "../hocs/withModal";
-import { UserIcon, FacebookIcon, GoogleIcon, TwitterIcon, InstagramIcon } from "../icons";
+import withModal from "./hocs/withModal";
+import { UserIcon, FacebookIcon, GoogleIcon, TwitterIcon, InstagramIcon } from "./icons";
 
 const LoginModal = () => {
   return (

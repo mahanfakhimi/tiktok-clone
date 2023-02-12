@@ -1,5 +1,5 @@
-import videoUrl from "../../../video.mp4";
-import { LikeIcon, CommentIcon, ShareIcon } from "../../../components/icons";
+import videoUrl from "../video.mp4";
+import { LikeIcon, CommentIcon, ShareIcon } from "./icons";
 
 const VideoCard = () => {
   return (

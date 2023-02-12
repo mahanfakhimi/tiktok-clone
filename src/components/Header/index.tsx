@@ -1,4 +1,4 @@
-import Container from "../atoms/Container";
+import Container from "../ui/Container";
 import { TiktokIcon } from "../icons";
 import HeaderActions from "./HeaderActions";
 
