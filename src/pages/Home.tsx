@@ -2,7 +2,7 @@ import VideoCard from "../components/VideoCard";
 
 const Home = () => {
   return (
-    <div>
+    <div className="pt-4">
       <VideoCard />
       <VideoCard />
       <VideoCard />
