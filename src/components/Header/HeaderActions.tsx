@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { InboxIcon, MessagesIcon } from "../icons";
-import OptionsMenu from "./OptionsMenu";
+import HeaderPopover from "./HeaderPopover";
 import { UserContext } from "../../contexts/UserProvider";
 import LoginModal from "../LoginModal";
 
@@ -30,7 +30,7 @@ const UploadButton = () => {
   );
 };
 
-const RenderOtherThings = () => {
+const RenderOtherThingsBasedOnUser = () => {
   const user = useContext(UserContext);
 
   if (user)
@@ -52,8 +52,8 @@ const HeaderActions = () => {
   return (
     <div className="flex items-center">
       <UploadButton />
-      <RenderOtherThings />
-      <OptionsMenu />
+      <RenderOtherThingsBasedOnUser />
+      <HeaderPopover />
     </div>
   );
 };
