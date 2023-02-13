@@ -3,11 +3,11 @@ import { createContext, useEffect, ReactNode, FC, useState, SetStateAction, Disp
 export const UserContext = createContext<null | boolean>(null);
 export const UserContextDispatcher = createContext<null | Dispatch<SetStateAction<boolean>>>(null);
 
-type UserProviderProps = {
+type UserContextProviderProps = {
   children: ReactNode;
 };
 
-const UserProvider: FC<UserProviderProps> = ({ children }) => {
+const UserContextProvider: FC<UserContextProviderProps> = ({ children }) => {
   const [user, setUser] = useState(false);
 
   useEffect(() => {
@@ -23,4 +23,4 @@ const UserProvider: FC<UserProviderProps> = ({ children }) => {
   );
 };
 
-export default UserProvider;
+export default UserContextProvider;

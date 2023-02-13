@@ -1,5 +1,5 @@
-import Container from "../ui/Container";
-import { TiktokIcon } from "../icons";
+import Container from "../../ui/Container";
+import { TiktokIcon } from "../../ui/icons";
 import HeaderActions from "./HeaderActions";
 
 const Header = () => {

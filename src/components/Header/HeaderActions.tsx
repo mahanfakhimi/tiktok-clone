@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
-import { InboxIcon, MessagesIcon } from "../icons";
+import { InboxIcon, MessagesIcon } from "../../ui/icons";
 import HeaderPopover from "./HeaderPopover";
-import { UserContext } from "../../contexts/UserProvider";
-import LoginModal from "../LoginModal";
+import { UserContext } from "../../contexts/UserContextProvider";
+import LoginModal from "../../common/LoginModal";
 
 const LoginButton = () => {
   const [isOpen, setIsOpen] = useState(false);

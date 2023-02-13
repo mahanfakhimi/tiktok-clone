@@ -1,6 +1,6 @@
 import { Dispatch, FC, Fragment, SetStateAction } from "react";
 import { Transition, Dialog } from "@headlessui/react";
-import { CloseIcon } from "../icons";
+import { CloseIcon } from "../ui/icons";
 
 type Props = {
   setIsOpen: Dispatch<SetStateAction<boolean>>;

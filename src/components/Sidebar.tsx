@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
-import LoginModal from "./LoginModal";
-import { HomeIcon, PersonIcon, LiveIcon } from "./icons";
+import LoginModal from "../common/LoginModal";
+import Avatar from "../ui/Avatar";
+import { HomeIcon, PersonIcon, LiveIcon } from "../ui/icons";
 
 const NavItem = ({ Icon, label }: { Icon: FC; label: string }) => (
   <div className="cursor-pointer flex items-center gap-x-2 mb-4">
@@ -41,7 +42,7 @@ const Sidebar = () => {
         <div className="flex flex-col gap-y-4">
           {[...Array(5)].map((user, index) => (
             <div key={index} className="flex items-center gap-x-3 cursor-pointer">
-              <img className="w-8 h-8 rounded-full object-cover" src="https://www.tubefilter.com/wp-content/uploads/2022/09/khaby-lame-acting.jpg" alt="" />
+              <Avatar src="https://www.tubefilter.com/wp-content/uploads/2022/09/khaby-lame-acting.jpg" size="small" />
               <div className="hidden md:block">
                 <h3 className="font-semibold text-sm">samsmith</h3>
                 <p className="text-gray-500 text-xs mt-0.5">Sam Smith</p>

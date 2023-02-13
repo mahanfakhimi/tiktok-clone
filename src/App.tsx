@@ -1,17 +1,17 @@
 import { Route, Routes } from "react-router-dom";
-import { RootLayout } from "./components/layouts";
-import UserProvider from "./contexts/UserProvider";
+import { RootLayout } from "./layouts";
+import UserContextProvider from "./contexts/UserContextProvider";
 import { Home } from "./pages";
 
 const App = () => {
   return (
-    <UserProvider>
+    <UserContextProvider>
       <RootLayout>
         <Routes>
           <Route index element={<Home />} />
         </Routes>
       </RootLayout>
-    </UserProvider>
+    </UserContextProvider>
   );
 };
 
