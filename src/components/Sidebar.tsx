@@ -1,41 +1,38 @@
-import { FC, useState } from "react";
-import LoginModal from "../common/LoginModal";
+import { useContext } from "react";
+import { LoginContextDispatcher } from "../contexts/LoginModalProvider";
+import { UserContext } from "../contexts/UserContextProvider";
 import Avatar from "../ui/Avatar";
 import { HomeIcon, PersonIcon, LiveIcon } from "../ui/icons";
 
-const NavItem = ({ Icon, label }: { Icon: FC; label: string }) => (
-  <div className="cursor-pointer flex items-center gap-x-2 mb-4">
-    <Icon />
-    <span className="hidden md:block">{label}</span>
-  </div>
-);
-
-const LoginButton = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <div>
-      <button onClick={() => setIsOpen(true)} className="text-[#fe2c55] font-semibold hover:bg-[#fff1f4] active:bg-[#ffcad4] w-full border border-[#fe2c55] py-3 px-8 rounded-md">
-        Login
-      </button>
-      <LoginModal isOpen={isOpen} setIsOpen={setIsOpen} />
-    </div>
-  );
-};
-
 const Sidebar = () => {
+  const setOpenLoginModal = useContext(LoginContextDispatcher);
+  const user = useContext(UserContext);
+
   return (
-    <aside className="max-w-xs h-screen border-r p-4 bg-white">
+    <aside className="max-w-xs h-screen border-r p-4 bg-white w-full">
       <nav className="font-semibold mb-4">
-        <NavItem Icon={HomeIcon} label="For You" />
-        <NavItem Icon={PersonIcon} label="Following" />
-        <NavItem Icon={LiveIcon} label="Live" />
+        <div className="cursor-pointer flex items-center gap-x-2 mb-4">
+          <HomeIcon />
+          <span className="hidden md:block">For You</span>
+        </div>
+        <div className="cursor-pointer flex items-center gap-x-2 mb-4">
+          <PersonIcon />
+          <span className="hidden md:block">Following</span>
+        </div>
+        <div className="cursor-pointer flex items-center gap-x-2 mb-4">
+          <LiveIcon />
+          <span className="hidden md:block">Live</span>
+        </div>
       </nav>
 
-      <div className="border-t border-b py-4 mb-4 hidden md:block">
-        <p className="text-sm text-gray-500 mb-4">Log in to follow creators, like videos, and view comments</p>
-        <LoginButton />
-      </div>
+      {!user && (
+        <div className="border-t border-b py-4 mb-4 hidden md:block">
+          <p className="text-sm text-gray-500 mb-4">Log in to follow creators, like videos, and view comments</p>
+          <button onClick={() => setOpenLoginModal?.(true)} className="text-[#fe2c55] font-semibold hover:bg-[#fff1f4] active:bg-[#ffcad4] w-full border border-[#fe2c55] py-3 px-8 rounded-md">
+            Login
+          </button>
+        </div>
+      )}
 
       <div>
         <p className="text-gray-500 text-sm mb-4 hidden md:block">Suggested accounts</p>
