@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { InboxIcon, MessagesIcon } from "../../ui/icons";
+import { InboxIcon, MessagesIcon } from "../../../ui/icons";
 import HeaderPopover from "./HeaderPopover";
-import { UserContext } from "../../contexts/UserContextProvider";
-import { LoginContextDispatcher } from "../../contexts/LoginModalProvider";
+import { UserContext } from "../../../contexts/UserContextProvider";
+import { LoginContextDispatcher } from "../../../contexts/LoginModalProvider";
 
 const HeaderActions = () => {
   const user = useContext(UserContext);

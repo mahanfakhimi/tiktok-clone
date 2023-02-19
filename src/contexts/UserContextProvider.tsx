@@ -11,7 +11,7 @@ const UserContextProvider: FC<UserContextProviderProps> = ({ children }) => {
   const [user, setUser] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setUser(true), 2000);
+    setTimeout(() => setUser(true), 500);
   }, []);
 
   return (

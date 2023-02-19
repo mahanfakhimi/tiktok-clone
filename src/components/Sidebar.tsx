@@ -2,14 +2,14 @@ import { useContext } from "react";
 import { LoginContextDispatcher } from "../contexts/LoginModalProvider";
 import { UserContext } from "../contexts/UserContextProvider";
 import Avatar from "../ui/Avatar";
-import { HomeIcon, PersonIcon, LiveIcon } from "../ui/icons";
+import { HomeIcon, PersonIcon } from "../ui/icons";
 
 const Sidebar = () => {
   const setOpenLoginModal = useContext(LoginContextDispatcher);
   const user = useContext(UserContext);
 
   return (
-    <aside className="max-w-xs h-screen border-r p-4 bg-white w-full">
+    <aside className="max-w-xs h-screen border-r p-4 bg-white md:w-full">
       <nav className="font-semibold mb-4">
         <div className="cursor-pointer flex items-center gap-x-2 mb-4">
           <HomeIcon />
@@ -18,10 +18,6 @@ const Sidebar = () => {
         <div className="cursor-pointer flex items-center gap-x-2 mb-4">
           <PersonIcon />
           <span className="hidden md:block">Following</span>
-        </div>
-        <div className="cursor-pointer flex items-center gap-x-2 mb-4">
-          <LiveIcon />
-          <span className="hidden md:block">Live</span>
         </div>
       </nav>
 
