@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { LoginContextDispatcher } from "../contexts/LoginModalProvider";
 import { UserContext } from "../contexts/UserContextProvider";
 import Avatar from "../ui/Avatar";
-import { HomeIcon, PersonIcon } from "../ui/icons";
+import { AnimalsIcon, BeautyIcon, ComedyIcon, DanceIcon, FoodIcon, GamingIcon, HomeIcon, PersonIcon, SportsIcon } from "../ui/icons";
 
 const Sidebar = () => {
   const setOpenLoginModal = useContext(LoginContextDispatcher);
@@ -29,6 +29,40 @@ const Sidebar = () => {
           </button>
         </div>
       )}
+
+      <div className="mb-4">
+        <p className="text-gray-500 text-sm mb-4 hidden md:block">Popular topics</p>
+        <div className="flex flex-col gap-y-4 [&>div>span]:hidden [&>div>span]:md:block">
+          <div className="flex items-center gap-x-2 cursor-pointer">
+            <ComedyIcon />
+            <span className="font-semibold">Comedy</span>
+          </div>
+          <div className="flex items-center gap-x-2 cursor-pointer">
+            <GamingIcon />
+            <span className="font-semibold">Gaming</span>
+          </div>
+          <div className="flex items-center gap-x-2 cursor-pointer">
+            <FoodIcon />
+            <span className="font-semibold">Food</span>
+          </div>
+          <div className="flex items-center gap-x-2 cursor-pointer">
+            <DanceIcon />
+            <span className="font-semibold">Dance</span>
+          </div>
+          <div className="flex items-center gap-x-2 cursor-pointer">
+            <BeautyIcon />
+            <span className="font-semibold">Beauty</span>
+          </div>
+          <div className="flex items-center gap-x-2 cursor-pointer">
+            <AnimalsIcon />
+            <span className="font-semibold">Animals</span>
+          </div>
+          <div className="flex items-center gap-x-2 cursor-pointer">
+            <SportsIcon />
+            <span className="font-semibold">Sports</span>
+          </div>
+        </div>
+      </div>
 
       <div>
         <p className="text-gray-500 text-sm mb-4 hidden md:block">Suggested accounts</p>
