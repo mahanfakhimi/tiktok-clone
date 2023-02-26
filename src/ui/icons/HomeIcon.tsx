@@ -2,7 +2,7 @@ import { memo } from "react";
 
 const HomeIcon = memo<JSX.IntrinsicElements["svg"]>((props) => {
   return (
-    <svg {...props} width="32" height="32" viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <svg {...props} width="2.5em" height="2.5em" viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path
         fillRule="evenodd"
         clipRule="evenodd"

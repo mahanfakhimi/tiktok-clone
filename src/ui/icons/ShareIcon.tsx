@@ -13,7 +13,7 @@ const ShareIcon = memo<JSX.IntrinsicElements["svg"]>((props) => {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M36.0958 16.8L38.8639 22.3362C39.3536 23.3155 39.1184 24.5021 38.2921 25.2206L25.8958 36C25.8958 36 25.2958 39 27.0958 39C28.8958 39 43.2958 25.8 43.2958 25.8C43.2958 25.8 43.8958 24 42.0958 22.2C40.2958 20.4 36.0958 16.8 36.0958 16.8Z"
-        fill="#161823"
+        fill="currentColor"
       ></path>
       <path fillRule="evenodd" clipRule="evenodd" d="M25.7997 16.8389V32.4389C25.7997 32.4389 11.5114 30.4255 7.03635 37.2389C2.73042 43.7949 3.12588 29.8349 9.60816 22.8829C16.0904 15.931 25.7997 16.8389 25.7997 16.8389Z" fill="url(#ShareShadowColor_paint0_radial)"></path>
     </svg>

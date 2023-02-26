@@ -1,2 +1,2 @@
-export { default as LoginContextProvider } from "./LoginModalProvider";
+export { default as LoginModalContextProvider } from "./LoginModalContextProvider";
 export { default as UserContextProvider } from "./UserContextProvider";

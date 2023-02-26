@@ -2,11 +2,11 @@ import { useContext } from "react";
 import { InboxIcon, MessagesIcon } from "../../../ui/icons";
 import HeaderPopover from "./HeaderPopover";
 import { UserContext } from "../../../contexts/UserContextProvider";
-import { LoginContextDispatcher } from "../../../contexts/LoginModalProvider";
+import { LoginModalContextDispatcher } from "../../../contexts/LoginModalContextProvider";
 
 const HeaderActions = () => {
   const user = useContext(UserContext);
-  const setOpenLoginModal = useContext(LoginContextDispatcher);
+  const setOpenLoginModal = useContext(LoginModalContextDispatcher);
 
   const handleOpenLoginModal = () => setOpenLoginModal?.(true);
 
@@ -19,10 +19,10 @@ const HeaderActions = () => {
       {user ? (
         <div className="flex items-center mr-4">
           <button className="mr-4">
-            <MessagesIcon className="text-2xl" />
+            <MessagesIcon />
           </button>
           <button>
-            <InboxIcon className="text-2xl" />
+            <InboxIcon />
           </button>
         </div>
       ) : (
